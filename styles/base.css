@@ -1,4 +1,4 @@
-/* General styles */
+
 body {
     font-family: 'Merriweather', serif;
     margin: 0;
@@ -7,9 +7,8 @@ body {
     color: #333;
 }
 
-/* Header styles */
 header {
-    background-color: #FFB6C1;  /* Light Pink color */
+    background-color: #FFB6C1; 
     color: white;
     padding: 20px;
     text-align: center;
@@ -30,10 +29,9 @@ nav a {
 }
 
 nav a:hover {
-    color: #FFD700;  /* Gold color on hover */
+    color: #FFD700;
 }
 
-/* Main section styles */
 main {
     max-width: 1200px;
     margin: 20px auto;
@@ -56,7 +54,6 @@ main {
     border-radius: 4px;
 }
 
-/* Footer styles */
 footer {
     background-color: #333;
     color: white;
