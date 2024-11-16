@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temples</title>
+
+    <!-- Link to Google Fonts (Edu AU VIC WA NT Guides and Sour Gummy) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Link to the mobile-first CSS file in the "styles" folder -->
+    <link rel="stylesheet" href="styles/temples.css">
+
+    <!-- Link to the larger screen CSS file for responsiveness inside the "styles" folder -->
+    <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 768px)">
+
+    <!-- Link to JavaScript file -->
+    <script src="temples.js" defer></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Temples</h1>
+        <nav>
+            <!-- Hamburger Button for mobile view -->
+            <button id="hamburger" aria-label="Toggle navigation">☰</button>
+            <ul id="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#old">Old</a></li>
+                <li><a href="#new">New</a></li>
+                <li><a href="#large">Large</a></li>
+                <li><a href="#small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <h2 id="current-selection" class="sour-gummy-heading">Home</h2>
+        
+        <div class="temple-gallery">
+            <!-- Temple 1 -->
+            <figure>
+                <img src="images/temple1.jpg" alt="St. George Utah Temple">
+                <figcaption>St. George Utah Temple</figcaption>
+            </figure>
+
+            <!-- Temple 2 -->
+            <figure>
+                <img src="images/temple2.jpg" alt="Logan Utah Temple">
+                <figcaption>Logan Utah Temple</figcaption>
+            </figure>
+
+            <!-- Temple 3 -->
+            <figure>
+                <img src="images/temple3.jpg" alt="Manti Utah Temple">
+                <figcaption>Manti Utah Temple</figcaption>
+            </figure>
+
+            <!-- Temple 4 -->
+            <figure>
+                <img src="images/temple4.jpg" alt="Salt Lake Temple">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+
+            <!-- Temple 5 -->
+            <figure>
+                <img src="images/temple5.jpg" alt="Laie Hawaii Temple">
+                <figcaption>Laie Hawaii Temple</figcaption>
+            </figure>
+
+            <!-- Temple 6 -->
+            <figure>
+                <img src="images/temple6.jpg" alt="Cardston Alberta Temple">
+                <figcaption>Cardston Alberta Temple</figcaption>
+            </figure>
+
+            <!-- Temple 7 -->
+            <figure>
+                <img src="images/temple7.jpg" alt="Mesa Arizona Temple">
+                <figcaption>Mesa Arizona Temple</figcaption>
+            </figure>
+
+            <!-- Temple 8 -->
+            <figure>
+                <img src="images/temple8.jpg" alt="Idaho Falls Idaho Temple">
+                <figcaption>Idaho Falls Idaho Temple</figcaption>
+            </figure>
+
+            <!-- Temple 9 -->
+            <figure>
+                <img src="images/temple9.jpg" alt="Bern Switzerland Temple">
+                <figcaption>Bern Switzerland Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Izabelle Harker, Idaho, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // JavaScript to update the footer dynamically with the year and last modified date
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = "Last updated: " + document.lastModified;
+        
+        // Hamburger menu functionality
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+            hamburger.textContent = navMenu.classList.contains('show') ? 'X' : '☰';
+        });
+    </script>
+</body>
+</html>

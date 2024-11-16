@@ -1,0 +1,24 @@
+/* Styles for larger screen devices (e.g., tablets, desktops) */
+
+@media (min-width: 768px) {
+    /* Adjust navigation menu */
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    /* Adjust temple gallery layout */
+    .temple-gallery {
+        grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */
+    }
+
+    /* Adjust header and main */
+    header {
+        padding: 1.5rem;
+    }
+
+    main {
+        width: 80%;
+    }
+}

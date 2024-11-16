@@ -1,0 +1,107 @@
+/* Mobile-first layout in temples.css */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic Styles */
+body {
+    font-family: "Edu AU VIC WA NT Guides", sans-serif; /* Use the first font for body text */
+    background-color: #A7ADC6; /* Light color for background */
+    color: #56667A; /* Darker text color */
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #2C1320; /* Deep red */
+    color: #A7ADC6; /* Light color text */
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 700; /* Bold for header */
+}
+
+/* Navigation */
+nav {
+    margin-top: 1rem;
+}
+
+nav ul {
+    display: none;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0.5rem 0;
+}
+
+nav a {
+    color: #A7ADC6;
+    text-decoration: none;
+    padding: 0.5rem;
+    display: block;
+}
+
+/* Hamburger menu for mobile */
+#hamburger {
+    background: none;
+    color: #A7ADC6;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Show the navigation menu when toggled */
+nav ul.show {
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #5F4B66; /* Hover color */
+}
+
+/* Main Section */
+main {
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.temple-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+figure {
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+figure figcaption {
+    font-weight: 500;
+    margin-top: 0.5rem;
+    color: #2C1320; /* Caption text color */
+}
+
+/* Footer */
+footer {
+    background-color: #2C1320;
+    color: #A7ADC6;
+    padding: 1rem;
+    text-align: center;
+}
