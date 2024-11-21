@@ -1,0 +1,97 @@
+/* Global Styles */
+:root {
+    --primary-color: #EBBAB9;  /* Soft pink */
+    --secondary-color: #C9C5BA; /* Light beige */
+    --accent-color-1: #97B1A6;  /* Soft green */
+    --accent-color-2: #698996;  /* Muted teal */
+    --accent-color-3: #407076;  /* Deep teal */
+    --text-color: #333;
+    --background-color: #fff;
+    --hero-height: 50vh;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#hero {
+    width: 100%;
+    height: var(--hero-height);
+    background-color: #ddd;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#weather {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--secondary-color);
+    border-top: 5px solid var(--primary-color);
+}
+
+#weather h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: var(--accent-color-3);
+}
+
+.weather-details p {
+    font-size: 1.2em;
+    color: var(--accent-color-2);
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    #hero {
+        height: 30vh;
+    }
+
+    .hero-image {
+        object-position: top;
+    }
+}
+
+@media (min-width: 601px) {
+    #weather {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .weather-details p {
+        font-size: 1.5em;
+        color: var(--accent-color-1);
+    }
+}
