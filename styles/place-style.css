@@ -70,6 +70,17 @@ nav ul li a {
     margin-bottom: 20px;
     color: var(--accent-color-3);
     font-family: var(--font-secondary); /* Use secondary font for headings */
+    position: relative;
+}
+
+/* Add the weather icon after the heading */
+#weather h2::after {
+    content: url('assets/icons/weather-icon.svg'); /* Add weather SVG icon */
+    position: absolute;
+    right: -40px; /* Position the icon to the right of the heading */
+    top: 0;
+    width: 30px;
+    height: 30px;
 }
 
 .weather-details p {
@@ -86,6 +97,14 @@ nav ul li a {
 
     .hero-image {
         object-position: top;
+    }
+
+    /* Adjust weather icon for mobile view (SVG format) */
+    #weather h2::after {
+        content: url('assets/icons/weather-icon-mobile.svg'); /* Mobile version of the weather SVG icon */
+        width: 25px;
+        height: 25px;
+        right: -35px;
     }
 }
 
