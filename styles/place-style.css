@@ -8,10 +8,14 @@
     --text-color: #333;
     --background-color: #fff;
     --hero-height: 50vh;
+    --font-primary: 'Edu AU VIC WA NT Guides', sans-serif;
+    --font-secondary: 'Geist Mono', monospace;
+    --font-tertiary: 'Sour Gummy', sans-serif;
 }
 
+/* Base font and body styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--font-primary); /* Apply the primary font to the body */
     margin: 0;
     padding: 0;
     background-color: var(--background-color);
@@ -38,6 +42,7 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    font-family: var(--font-secondary); /* Use secondary font for links */
 }
 
 #hero {
@@ -64,11 +69,13 @@ nav ul li a {
     font-size: 2em;
     margin-bottom: 20px;
     color: var(--accent-color-3);
+    font-family: var(--font-secondary); /* Use secondary font for headings */
 }
 
 .weather-details p {
     font-size: 1.2em;
     color: var(--accent-color-2);
+    font-family: var(--font-tertiary); /* Use tertiary font for weather details */
 }
 
 /* Media Queries */
