@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Temple Album - The First 9 Temples</title>
-    <meta name="description" content="Explore the first 9 temples built. Each temple includes a beautiful picture and information on where it is located.">
+    <meta name="description" content="Explore the first 9 temples built. Each temple includes a beautiful picture of the temple and where it is located.">
     <meta name="author" content="Izabelle Harker">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/temples-copy.css">
     <link rel="stylesheet" href="styles/temples-large-copy.css" media="(min-width: 768px)">
 </head>
@@ -15,7 +18,7 @@
         <h1>Temples</h1>
         <nav>
             <button id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
-            <ul id="nav-menu" role="navigation" aria-label="Main navigation" aria-hidden="true">
+            <ul id="nav-menu" aria-label="Main navigation" aria-hidden="true">
                 <li><a href="#" id="home">Home</a></li>
                 <li><a href="#" id="old">Old</a></li>
                 <li><a href="#" id="new">New</a></li>
@@ -26,10 +29,8 @@
     </header>
 
     <main>
-        <h2 id="current-selection">Home</h2>
-        <div id="temple-gallery" class="temple-gallery">
-            <!-- Temple cards will be dynamically inserted here -->
-        </div>
+        <h2 id="current-selection" class="sour-gummy-heading">Home</h2>
+        <div id="temple-gallery" class="temple-gallery"></div>
     </main>
 
     <footer>
@@ -37,7 +38,11 @@
         <p id="lastModified"></p>
     </footer>
 
-    <!-- Link to the JavaScript file -->
     <script src="scripts/temples-copy.js" defer></script>
+    <script>
+        // Automatically update the copyright year and last modified date
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = `Last modified: ${document.lastModified}`;
+    </script>
 </body>
 </html>
