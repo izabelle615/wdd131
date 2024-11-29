@@ -1,0 +1,35 @@
+/* Larger view styles for screens larger than 768px */
+@media (min-width: 768px) {
+    /* Navigation */
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /* Main Section */
+    main {
+        max-width: 1100px; /* Slightly smaller width on larger screens */
+        margin: 2rem auto;
+    }
+
+    /* Temple Gallery Layout */
+    .temple-gallery {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */
+    }
+
+    /* Temple Image styling */
+    .temple-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Adjust header font size */
+    header h1 {
+        font-size: 3rem;
+    }
+
+    /* Navigation hover effect */
+    nav ul li a:hover {
+        background-color: #5F4B66; /* Hover effect for larger screens */
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temple Album - The First 9 Temples</title>
+    <meta name="description" content="Explore the first 9 temples built. Each temple includes a beautiful picture and information on where it is located.">
+    <meta name="author" content="Izabelle Harker">
+    <link rel="stylesheet" href="styles/temples-copy.css">
+    <link rel="stylesheet" href="styles/temples-large-copy.css" media="(min-width: 768px)">
+</head>
+<body>
+    <header>
+        <h1>Temples</h1>
+        <nav>
+            <button id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+            <ul id="nav-menu" role="navigation" aria-label="Main navigation" aria-hidden="true">
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#" id="old">Old</a></li>
+                <li><a href="#" id="new">New</a></li>
+                <li><a href="#" id="large">Large</a></li>
+                <li><a href="#" id="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 id="current-selection">Home</h2>
+        <div id="temple-gallery" class="temple-gallery">
+            <!-- Temple cards will be dynamically inserted here -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Izabelle Harker, Idaho, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <!-- Link to the JavaScript file -->
+    <script src="scripts/temples-copy.js" defer></script>
+</body>
+</html>

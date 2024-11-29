@@ -1,0 +1,131 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic Styles */
+body {
+    font-family: "Edu AU VIC WA NT Guides", sans-serif;
+    background-color: #f1f1f1; /* Lighter background */
+    color: #333; /* Darker text for better contrast */
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #2C1320; /* Deep red */
+    color: #F4F4F4; /* Lighter text */
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 700; /* Bold header */
+}
+
+/* Navigation */
+nav {
+    margin-top: 1rem;
+}
+
+nav ul {
+    display: none;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0.5rem 0;
+}
+
+nav a {
+    color: #F4F4F4;
+    text-decoration: none;
+    padding: 0.5rem;
+    display: block;
+}
+
+/* Hamburger menu for mobile */
+#hamburger {
+    background: none;
+    color: #F4F4F4;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Show the navigation menu when toggled */
+nav ul.show {
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #5F4B66; /* Hover effect */
+}
+
+/* Main Section */
+main {
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Temple Gallery Layout */
+.temple-gallery {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 column for mobile view */
+    gap: 1rem;
+}
+
+/* Temple Card Styles */
+.temple-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.temple-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.temple-card h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #2C1320;
+    margin-top: 1rem;
+}
+
+.temple-card p {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 0.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: #2C1320;
+    color: #F4F4F4;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Lazy Load Placeholder */
+img[loading="lazy"] {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+img[loading="lazy"].loaded {
+    opacity: 1;
+}
