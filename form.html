@@ -7,12 +7,12 @@
     <meta name="author" content="Izabelle Harker">
     <title>Product Review Form</title>
 
-    <!-- Google Fonts Preconnect and Link for Times New Roman -->
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Times+New+Roman&display=swap" rel="stylesheet">
 
-    <!-- Link to the CSS file located in the 'styles' directory -->
+    
     <link rel="stylesheet" href="styles/form-style.css">
 </head>
 <body>
@@ -75,7 +75,7 @@
                 <input type="text" id="userName" name="userName">
             </fieldset>
 
-            <!-- Submit button with value="Submit" -->
+            
             <input type="submit" value="Submit">
         </form>
     </main>
@@ -84,28 +84,28 @@
         <p id="footerContent"></p>
     </footer>
 
-    <!-- Defer JavaScript to ensure it loads after HTML parsing -->
+   
     <script defer src="scripts/form-script.js"></script>
     <script>
-        // Function to format the last modified date and time
+        
         function formatLastModifiedDate() {
             const now = new Date();
             const year = now.getFullYear();
-            const month = String(now.getMonth() + 1).padStart(2, '0');  // Months are zero-indexed
+            const month = String(now.getMonth() + 1).padStart(2, '0');  
             const day = String(now.getDate()).padStart(2, '0');
-            const hours = String(now.getHours()).padStart(2, '0');  // Hours in 24-hour format
+            const hours = String(now.getHours()).padStart(2, '0');  
             const minutes = String(now.getMinutes()).padStart(2, '0');
             const seconds = String(now.getSeconds()).padStart(2, '0');
 
-            // Format the date and time string
+            
             return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
         }
 
-        // Set footer content dynamically
+        
         window.onload = function() {
             const footerContent = document.getElementById('footerContent');
             if (footerContent) {
-                const lastModifiedDate = formatLastModifiedDate();  // Get the current date and time
+                const lastModifiedDate = formatLastModifiedDate();  
                 footerContent.textContent = `Year: ${new Date().getFullYear()} | Izabelle Harker | Idaho | Last Modified: ${lastModifiedDate}`;
             }
         };

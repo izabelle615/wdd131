@@ -1,4 +1,4 @@
-/* Global Styles */
+
 body {
     font-family: 'Times New Roman', serif;
     background-color: #F5F5F5;
@@ -15,7 +15,7 @@ main {
     border-radius: 8px;
 }
 
-/* Form Styling */
+
 form fieldset {
     border: 1px solid #ddd;
     padding: 15px;
@@ -50,7 +50,7 @@ input[type="checkbox"] {
     margin-right: 5px;
 }
 
-/* Rating Stars */
+
 input[type="radio"] {
     display: inline-block;
     margin-right: 5px;
@@ -58,11 +58,11 @@ input[type="radio"] {
 
 label {
     font-size: 24px;
-    color: #7a2c8f; /* Eggplant purple */
+    color: #7a2c8f; 
 }
 
 input[type="submit"] {
-    background-color: #7a2c8f; /* Eggplant purple */
+    background-color: #7a2c8f;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -76,7 +76,7 @@ input[type="submit"]:hover {
     background-color: #66217a;
 }
 
-/* Footer Styling */
+
 footer {
     text-align: center;
     font-size: 14px;
