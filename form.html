@@ -17,6 +17,7 @@
 </head>
 <body>
     <main>
+        <h1>Submit Your Product Review</h1>
         <form id="reviewForm" method="get" action="review.html">
             <fieldset>
                 <label for="productName">Product Name:</label>
@@ -74,7 +75,7 @@
                 <input type="text" id="userName" name="userName">
             </fieldset>
 
-            <!-- Submit button with value attribute -->
+            <!-- Submit button with value="Submit" -->
             <input type="submit" value="Submit">
         </form>
     </main>
@@ -84,7 +85,7 @@
     </footer>
 
     <!-- Defer JavaScript to ensure it loads after HTML parsing -->
-    <script defer src="form-script.js"></script>
+    <script defer src="scripts/form-script.js"></script>
     <script>
         // Function to format the last modified date and time
         function formatLastModifiedDate() {
