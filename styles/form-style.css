@@ -1,96 +1,93 @@
-/* Link to Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Times+New+Roman&display=swap');
-
+/* Global Styles */
 body {
     font-family: 'Times New Roman', serif;
-    background-color: #E3D5E1; /* Light light purple */
-    color: #333;
+    background-color: #F5F5F5;
     margin: 0;
     padding: 0;
 }
 
-header {
-    background-color: #6A2E92; /* Eggplant Purple */
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
 main {
-    margin: 20px;
-    background-color: white;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #fff;
     padding: 20px;
-    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
-form {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Form Styling */
+form fieldset {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
 }
 
-fieldset {
-    border: none;
-    margin-bottom: 15px;
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+    font-weight: bold;
 }
 
-input, select, textarea {
+input[type="text"],
+input[type="date"],
+textarea,
+select {
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-top: 5px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 4px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Rating Stars */
+input[type="radio"] {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+label {
+    font-size: 24px;
+    color: #7a2c8f; /* Eggplant purple */
 }
 
 input[type="submit"] {
-    background-color: #6A2E92; /* Eggplant Purple */
+    background-color: #7a2c8f; /* Eggplant purple */
     color: white;
-    cursor: pointer;
+    padding: 12px 20px;
     border: none;
+    border-radius: 5px;
+    cursor: pointer;
     font-size: 16px;
+    width: 100%;
 }
 
 input[type="submit"]:hover {
-    background-color: #581c7b; /* Darker Purple */
+    background-color: #66217a;
 }
 
+/* Footer Styling */
 footer {
-    background-color: #6A2E92; /* Eggplant Purple */
-    color: white;
     text-align: center;
-    padding: 10px;
-    position: absolute;
+    font-size: 14px;
+    background-color: #7a2c8f;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
     width: 100%;
     bottom: 0;
 }
 
 footer p {
     margin: 0;
-}
-
-/* Styling for the star ratings */
-fieldset legend {
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-label[for^="rating"] {
-    font-size: 24px;
-    margin-right: 10px;
-    cursor: pointer;
-}
-
-input[type="radio"] {
-    display: none;
-}
-
-input[type="radio"]:checked + label {
-    color: #F1C40F; /* Gold for filled stars */
 }
