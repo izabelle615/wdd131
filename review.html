@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation</title>
+    <link rel="stylesheet" href="styles/form-style.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Thank You for Your Review!</h1>
+    </header>
+
+    <main>
+        <p>Your review has been successfully submitted.</p>
+        <!-- Display the review counter -->
+        <p id="reviewCounter" style="font-size: 20px; font-weight: bold;"></p>
+    </main>
+
+    <footer>
+        <p id="footerContent"></p>
+    </footer>
+
+    <script src="scripts/form-script.js"></script> <!-- Link to the JS file -->
+    <script>
+        // Display the review counter from localStorage
+        window.onload = function() {
+            let reviewCount = localStorage.getItem('reviewCount');
+            const reviewCounter = document.getElementById('reviewCounter');
+            if (reviewCounter) {
+                reviewCounter.textContent = `Total reviews submitted: ${reviewCount}`;
+            }
+
+            const footerContent = document.getElementById('footerContent');
+            if (footerContent) {
+                const lastModifiedDate = formatLastModifiedDate();  // Get the current date and time
+                footerContent.textContent = `Year: ${new Date().getFullYear()} | Izabelle Harker | Idaho | Last Modified: ${lastModifiedDate}`;
+            }
+        };
+
+        // Function to format the last modified date and time
+        function formatLastModifiedDate() {
+            const now = new Date();
+            const year = now.getFullYear();
+            const month = String(now.getMonth() + 1).padStart(2, '0');  // Months are zero-indexed
+            const day = String(now.getDate()).padStart(2, '0');
+            const hours = String(now.getHours()).padStart(2, '0');  // Hours in 24-hour format
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+
+            // Format the date and time string
+            return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+/* Link to Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Times+New+Roman&display=swap');
+
+body {
+    font-family: 'Times New Roman', serif;
+    background-color: #E3D5E1; /* Light light purple */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #6A2E92; /* Eggplant Purple */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #6A2E92; /* Eggplant Purple */
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #581c7b; /* Darker Purple */
+}
+
+footer {
+    background-color: #6A2E92; /* Eggplant Purple */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Styling for the star ratings */
+fieldset legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+label[for^="rating"] {
+    font-size: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + label {
+    color: #F1C40F; /* Gold for filled stars */
+}
