@@ -3,24 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundational Music Artists</title>
+    <title>Contact Us - Foundational Music Artists</title>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
     <header>
-        <h1>Foundational Music Artists</h1>
-        <p>Discover the artists who shaped today's music scene</p>
-    </header>
-
-   
-    <nav>
-        
-        <div class="hamburger" id="hamburger">&#9776;</div>
-        <div id="navbar">
-            
+        <h1>Contact Us</h1>
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776;
+        </div>
+        <nav id="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -29,29 +23,32 @@
                 <li><a href="tupac.html">Tupac Shakur</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
- 
     <section>
-        <h2>Welcome to Foundational Music Artists</h2>
-        <p>This site explores the influential figures who shaped rock, jazz, and hip-hop music.</p>
+        <h2>Get in Touch</h2>
+        <p>If you have any questions or comments about the page, please be sure to let us know.</p>
 
-        
-        <div class="image-gallery">
-            <img src="images/elvis-intro.jpg" alt="Elvis Presley" />
-            <img src="images/louis-intro.jpg" alt="Louis Armstrong" />
-            <img src="images/tupac-intro.jpg" alt="Tupac Shakur" />
-        </div>
+    
+        <form id="contactForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
 
-        <p>Click on the links in the navigation menu to learn more about each artist's legacy and influence on modern music.</p>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
     </section>
-
 
     <footer>
         <p>Project By: Izabelle Harker | Contact: harkerizabelle.12@gmail.com</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

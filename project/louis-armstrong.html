@@ -11,7 +11,7 @@
 <body>
     <header>
         <h1>Louis Armstrong</h1>
-        <div class="hamburger" onclick="toggleMenu()">
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
             &#9776;
         </div>
         <nav id="navbar">
@@ -21,13 +21,14 @@
                 <li><a href="elvis.html">Elvis Presley</a></li>
                 <li><a href="louis-armstrong.html">Louis Armstrong</a></li>
                 <li><a href="tupac.html">Tupac Shakur</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <section>
         <h2>Louis Armstrong: The Father of Jazz</h2>
-        <p>Louis Armstrong was a groundbreaking figure in jazz and American music. His trumpet playing, improvisational style, and unique performances set the stage for the beginnings jazz.</p>
+        <p>Louis Armstrong was a groundbreaking figure in jazz and American music. His trumpet playing, improvisational style, and unique performances set the stage for the beginnings of jazz.</p>
 
         <h3>Important Milestones in Armstrong's Career</h3>
         <ul>
@@ -37,6 +38,24 @@
         </ul>
 
         <img src="images/armstrong.jpg" alt="Louis Armstrong" loading="lazy">
+    </section>
+
+    <section>
+        <h2>Sign Up for Updates</h2>
+        <form id="artistForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <br>
+            <label for="artist">Favorite Artist:</label>
+            <select id="artist" required>
+                <option value="Louis Armstrong">Louis Armstrong</option>
+                <option value="Elvis Presley">Elvis Presley</option>
+                <option value="Tupac Shakur">Tupac Shakur</option>
+            </select>
+            <br>
+            <button type="submit">Save Info</button>
+        </form>
+        <div id="storedData"></div>
     </section>
 
     <footer>
